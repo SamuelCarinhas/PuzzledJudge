@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SamuelCarinhas/AtomicJudge.git"
+    "url": "git+https://github.com/SamuelCarinhas/PuzzledJudge.git"
   },
   "author": "Samuel Carinhas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SamuelCarinhas/AtomicJudge/issues"
+    "url": "https://github.com/SamuelCarinhas/PuzzledJudge/issues"
   },
-  "homepage": "https://github.com/SamuelCarinhas/AtomicJudge#readme",
+  "homepage": "https://github.com/SamuelCarinhas/PuzzledJudge#readme",
   "dependencies": {
     "bcryptjs": "*",
     "body-parser": "*",
