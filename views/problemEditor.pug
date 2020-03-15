@@ -1,0 +1,49 @@
+extends layout
+
+block content
+    div.listBox
+        div.set
+            h1 Problem Creator
+        form(method='POST', action='/problems/edit/'+problem.id)
+            div.sec
+                a Id
+                input.formControl(name='id', type='text', value = problem.id)
+            div.sec
+                a Title
+                input.formControl(name='title', type='text', value = problem.title)
+            div.sec
+                a Difficulty
+                input.formControl(name='difficulty', type='text', value = problem.difficulty)
+            div.sec
+                a Author
+                input.formControl(name='author', type='text', value = problem.author)
+            div.sec
+                a Description
+                br
+                textarea.formControl(name='description')=problem.description
+            div.sec
+                a Input
+                br
+                textarea.formControl(name='input')=problem.input
+            div.sec
+                a Output
+                br
+                textarea.formControl(name='output')=problem.output
+            div.sec
+                a Input Example
+                br
+                textarea.formControl(name='input_example')=problem.input_example
+            div.sec
+                a Output Example
+                br
+                textarea.formControl(name='output_example')=problem.output_example
+            div.sec
+                a Inputs
+                br
+                textarea.formControl(name='inputs')=inputs
+            div.sec
+                a Outputs
+                br
+                textarea.formControl(name='outputs')=outputs
+            div.sec
+                input(type='submit', value='Edit')

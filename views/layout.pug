@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+    head
+        title #{title}
+        link(href='/stylesheets/style.css', rel='stylesheet')
+    body
+        div.navbar
+            a(class=((active == 'home') ? 'active' : '') href="/") Home
+            a(class=((active == 'problems') ? 'active' : '') href="/problems") Problems
+            a(class=((active == 'submissions') ? 'active' : '') href="/submissions") Submissions
+            if !user
+                a.right(class=((active == 'register') ? 'active' : '') href="/register") Sign Up
+                a.right(class=((active == 'login') ? 'active' : '') href="/login") Sign In
+            else
+                if user.rank == 'Admin'
+                    a(class=((active == 'createProblem') ? 'active' : '') href="/problems/create") Create Problem
+                a.right(href='/logout') Logout
+        != messages('message', locals)
+        if errors
+            each error, i in errors
+                if i == 1
+                    - break
+                div(class='message type-danger')
+                    span(class='closebtn' onclick="this.parentElement.style.display='none';") &times;
+                    a #{error.msg}
+        block content
+        script(src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js')
+        script(src='/javascript/main.js')

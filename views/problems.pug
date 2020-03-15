@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    div.listBox
+        div.set
+            h1 Problems
+        div.description
+            div.id
+                a ID
+            div.title
+                a Title
+            div
+                a Solved
+            div
+                a Accuracy
+            div
+                a Difficulty
+        each problem, i in problems
+            div.problem(class=(i % 2 == 0) ? 'odd' : 'even')
+                div.id.debug
+                    a(href="/problems/id/" + problem.id)=problem.id
+                div.listText
+                    a(href="/problems/id/" + problem.id)=problem.title
+                div
+                    a 0
+                div
+                    a 0
+                div
+                    a(class=(problem.difficulty == 'Easy') ? 'green' : (problem.difficulty == 'Medium') ? 'yellow' : 'red')=problem.difficulty

@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    meta(http-equiv='refresh' content='2')
+    div.listBox
+        div.set
+            h1 Submissions
+        div.description
+            div.id
+                a ID
+            div.title
+                a Username
+            div
+                a Problem
+            div
+                a Result
+        each submission, i in submissions
+            div.problem(class=(i % 2 == 0) ? 'odd' : 'even')
+                div.id.debug
+                    a(href='/submissions/id/'+submission.fileName)=i
+                div.listText
+                    a=submission.username
+                div
+                    a=submission.problem
+                div.result
+                    a(class=(submission.status == 'Accepted') ? 'green' : (submission.status == 'pending') ? 'gray' : (submission.status.startsWith('running')) ? 'gray' : 'red')=submission.status

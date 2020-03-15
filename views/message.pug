@@ -1,0 +1,6 @@
+.messages
+    each type in Object.keys(messages)
+        each message in messages[type]
+            div(class='message type-'+type)
+                span(class='closebtn' onclick="this.parentElement.style.display='none';") &times;
+                a #{message}

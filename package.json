@@ -1,0 +1,34 @@
+{
+  "name": "puzzled",
+  "version": "1.0.0",
+  "description": "Online Judge",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamuelCarinhas/AtomicJudge.git"
+  },
+  "author": "Samuel Carinhas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamuelCarinhas/AtomicJudge/issues"
+  },
+  "homepage": "https://github.com/SamuelCarinhas/AtomicJudge#readme",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "express": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongoose": "*",
+    "mongoose-beautiful-unique-validation": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "pug": "*",
+    "multer": "*"
+  }
+}

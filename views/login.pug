@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    div(class='box')
+        h1 Puzzled Judge
+        hr
+        h2 Problem Solving
+        form(method='POST', action='/login')
+            div(class='text')
+                a Username
+                input(name='username' class='loginInput' type='text')
+            div(class='password')
+                a Password
+                input(name='password' class='loginInput' type='password')
+            div(class='buttons')
+                input(name='login' class='login' value='Login' type='submit')
+                input(name='register' class='register' value='Register' type='submit')

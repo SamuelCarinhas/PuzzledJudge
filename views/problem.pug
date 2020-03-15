@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    div.problemContainer
+        div.problemView
+            h1 #{problem.title}
+            h2 Description:
+            pre #{problem.description}
+            h2 Input:
+            pre #{problem.input}
+            h2 Output:
+            pre #{problem.output}
+            h2 Input Example:
+            pre #{problem.input_example}
+            h2 Output Example:
+            pre #{problem.output_example}
+        div.problemInfo
+            div.title
+                a Problem Info
+            a Difficulty: Easy
+            a Memory Limit: 500MB
+            a Time Limit: 1000ms
+            a Author: #{problem.author}
+        if user
+            div.problemSubmit
+                div.title
+                    a Problem Submit
+                form(method='POST', action='/problems/id/' + problem.id, enctype='multipart/form-data')
+                    input(name='fileSubmit' class='fileSubmit' type='file')
+                    input(name='submit' class='submit' value='Submit' type='submit')
+            if user.rank == 'Admin'
+                div.problemAdmin
+                    div.title
+                        a Problem Admin
+                    a.edit(href='/problems/edit/' + problem.id) Edit
+                    a.remove(href='/problems/remove/' + problem.id) Remove

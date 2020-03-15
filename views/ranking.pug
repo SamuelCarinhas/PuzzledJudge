@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    - let count = 0
+    div.listBox
+        h1 Users
+        div.description
+            div.id
+                a Rank
+            div.title
+                a Username
+            div
+                a Solved
+            div
+                a Country
+        each user, i in users
+            - count++
+            div.problem
+                ul
+                    div.id
+                        a=count
+                    div.listText.debug
+                        a(href="/user/" + user.username)=user.username
+                    div
+                        a 0
+                    div
+                        a=user.country

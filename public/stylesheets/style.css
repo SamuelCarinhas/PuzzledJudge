@@ -1,0 +1,499 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ededed;
+}
+
+pre {
+    white-space: pre-line;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    font-family: Arial;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #383838;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #ededed;
+}
+
+.navbar a.active {
+    background-color: #ededed;
+}
+
+/* Register & Login Page */
+
+div.box {
+    position:absolute;
+    margin-left: 35%;
+    margin-right: 35%;
+    top: 26%;
+    width: 30%;
+    height: 50%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+div.register {
+    top: 17%;
+}
+
+div.box hr {
+    background-color: #828282;
+    height: 2px;
+    position: center;
+    width: 100%;
+    border: 0;
+}
+
+div.box h1 {
+    font-size: 36px;
+    color: #d99843;
+}
+
+div.box h2 {
+    font-size: 24px;
+    color: #707070;
+    margin-bottom: 50px;
+}
+
+div.box div.text {
+    text-align: left;
+}
+
+div.box div.text a {
+    margin-left: 10%;
+    color: #707070;
+    font-size: 20px;
+    display: block;
+}
+
+div.box div.password {
+    text-align: left;
+}
+
+div.box div.password a {
+    margin-left: 10%;
+    color: #707070;
+    font-size: 20px;
+    display: block;
+}
+
+input.loginInput {
+    margin-left: 10%;
+    border-radius: 20px;
+    margin-bottom: 10%;
+    border: #ffffff;
+    width: 80%;
+    height: 40px;
+    padding: 0px 2%;
+}
+
+div.box div.buttons {
+    text-align: left;
+}
+
+div.box div.buttons input {
+    width: 25%;
+    height: 45px;
+    color: #ffffff;
+    border-radius: 20px;
+    border: #ffffff;
+    text-align: center;
+}
+
+div.box div.buttons input.login {
+    margin-left: 18%;
+    background-color: #3ECB5A;
+}
+
+div.box div.buttons input.login:hover {
+    background-color: rgb(51, 223, 85);
+    cursor: pointer;
+}
+
+div.box div.buttons input.register {
+    margin-left: 14%;
+    background-color: #d99843;
+}
+
+div.box div.buttons input.register:hover {
+    background-color: #f0a646;
+    cursor: pointer;
+}
+
+/* Tables */
+
+div.listBox {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 90%;
+    background-color: #ffffff;
+}
+
+div.listBox div.set {
+    display: inline-block;
+    width: 100%;
+    background-color: #6e6e6e;
+    margin-top: 0%;
+}
+
+div.listBox div.set h1 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 1%;
+}
+
+div.listBox div.description {
+    background-color: #f2f2f2;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+div.listBox div.description div {
+    display: inline-block;
+    color: #828282;
+    font-size: 20px;
+    margin-left: 5%;
+    width: 5%;
+}
+
+div.listBox div.description div.id {
+    margin-left: 1%;
+}
+
+div.listBox div.description div.title {
+    width: 40%;
+}
+
+div.listBox div.sec {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #ededed;
+}
+
+div.listBox div.sec input[type=submit] {
+    margin-left: 50%;
+    width: 100px;
+    height: 45px;
+    color: #ffffff;
+    background-color: #3ECB5A;
+    border-radius: 20px;
+    border: #ffffff;
+    text-align: center;
+}
+
+div.listBox div.sec a {
+    font-size: 18px;
+    color: #828282;
+    width: 10%;
+    display: inline-block;
+}
+
+div.listBox div.sec textarea {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+div.listBox div.sec input.formControl {
+    margin-left: 5%;
+    border-radius: 20px;
+    border: #ffffff;
+    width: 20%;
+    height: 30px;
+    padding: 0px 2%;
+}
+
+div.listBox div.problem {
+    padding-block: 1%;
+}
+
+div.listBox div.problem.even {
+    background-color:  #ededed;
+}
+
+div.listBox div.problem.odd {
+    background-color:  #ffffff;
+}
+
+div.listBox div.problem div.debug a {
+    text-decoration: none;
+    outline: none;
+    color: #828282;
+}
+
+div.listBox div.problem div {
+    display: inline-block;
+    color:  #828282;
+    font-size: 15px;
+    margin-left: 5%;
+    width: 5%;
+}
+
+div.listBox div.problem div.id {
+    margin-left: 1%;
+}
+
+div.listBox div.problem div.listText {
+    width: 40%;
+}
+
+div.listBox div.problem div.listText a {
+    text-decoration: none;
+    outline: none;
+    color: #828282;
+}
+
+div.listBox div.problem div.result {
+    width: 20%;
+}
+
+a.green {
+    font-size: 15px;
+    background-color: #3ECB5A;
+    border: 2px solid #3ECB5A;
+    border-radius: 30px;
+    border-left: 20px solid #3ECB5A;
+    border-right: 20px solid #3ECB5A;
+    color: #ffffff;
+    text-align: center;
+}
+
+a.yellow {
+    font-size: 15px;
+    background-color: #F1D460;
+    border: 2px solid #F1D460;
+    border-radius: 30px;
+    border-left: 20px solid #F1D460;
+    border-right: 20px solid #F1D460;
+    color: #ffffff;
+    text-align: center;
+}
+
+a.red {
+    font-size: 15px;
+    background-color: #DE6A6A;
+    border: 2px solid #DE6A6A;
+    border-radius: 30px;
+    border-left: 20px solid #DE6A6A;
+    border-right: 20px solid #DE6A6A;
+    color: #ffffff;
+    text-align: center;
+}
+
+a.gray {
+    font-size: 15px;
+    background-color: #363434;
+    border: 2px solid #363434;
+    border-radius: 30px;
+    border-left: 20px solid #363434;
+    border-right: 20px solid #363434;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Errors */
+
+div.message {
+    position: fixed;
+    bottom: 0%;
+    right: 1%;
+    color: #ffffff;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+span.closebtn {
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+div.type-error, div.type-danger {
+    background-color: #DE6A6A;
+}
+
+div.type-success {
+    background-color: #3ECB5A;
+}
+
+/* Problem Viewer */
+
+div.problemContainer {
+    margin-top: 2%;
+    width: 96%;
+    margin-left: 2%;
+    position: fixed;
+}
+
+div.problemView {
+    position: absolute;
+    display: inline-block;
+    background-color: #ffffff;
+    width: 80%;
+}
+
+div.problemView h1 {
+    margin-left: 1%;
+    color: #707070;
+    font-size: 30px;
+}
+
+div.problemView h2 {
+    margin-left: 1%;
+    color: #00aaed;
+    font-size: 25px;
+}
+
+div.problemView pre {
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+
+div.problemInfo {
+    display: inline-block;
+    width: 17%;
+    margin-left: 83%;
+    background-color: #ffffff;
+}
+
+div.problemInfo div.title {
+    width: 100%;
+    padding: 2% 0;
+    background-color: #6e6e6e;
+}
+
+div.problemInfo div.title a {
+    color: #ffffff;
+    font-size: 16px;
+    align-items: center;
+    margin-left: 1%;
+}
+
+div.problemSubmit {
+    text-align: center;
+    margin-top: 2%;
+    display: inline-block;
+    width: 17%;
+    margin-left: 83%;
+    background-color: #ffffff;
+}
+
+div.problemSubmit input {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+}
+
+div.problemSubmit input[type='submit'] {
+    padding: 1% 10%;
+    color: #ffffff;
+    background-color: #3ECB5A;
+    border-radius: 20px;
+    border: #ffffff;
+    text-align: center;
+}
+
+div.problemSubmit input[type='submit']:hover {
+    cursor: pointer;
+}
+
+div.problemSubmit div.title {
+    text-align: left;
+    width: 100%;
+    padding: 2% 0;
+    background-color: #6e6e6e;
+}
+
+div.problemSubmit div.title a {
+    color: #ffffff;
+    font-size: 16px;
+    align-items: center;
+    margin-left: 1%;
+}
+
+div.problemInfo a {
+    margin-top: 1%;
+    margin-left: 1%;
+    display: block;
+    margin-bottom: 1%;
+}
+
+div.problemAdmin {
+    display: inline-block;
+    text-align: center;
+    width: 17%;
+    margin-left: 83%;
+    margin-top: 2%;
+    background-color: #ffffff;
+}
+
+div.problemAdmin div.title {
+    text-align: left;
+    width: 100%;
+    padding: 2% 0;
+    background-color: #6e6e6e;
+}
+
+div.problemAdmin div.title a {
+    color: #ffffff;
+    font-size: 16px;
+    align-items: center;
+    margin-left: 1%;
+}
+
+div.problemAdmin a {
+    margin-top: 1%;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 30px;
+}
+
+div.problemAdmin a.edit {
+    background-color: #3ECB5A;
+    border: 2px solid #3ECB5A;
+    border-left: 20px solid #3ECB5A;
+    border-right: 20px solid #3ECB5A;
+}
+
+div.problemAdmin a.remove {
+    background-color: #DE6A6A;
+    border: 2px solid #DE6A6A;
+    border-left: 20px solid #DE6A6A;
+    border-right: 20px solid #DE6A6A;
+}
